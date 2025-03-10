@@ -21,7 +21,6 @@ body {
 .left-side {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .top-right {
@@ -51,14 +50,48 @@ body {
 
 .content-mid {
   flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.info {
+  font-weight: 900;
+  font-size: 36px;
+  color: #1f2937;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 48px;
 }
 
 .quote {
   flex: 2;
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e7eb;
+  line-height: 1;
 }
 
 .banner {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-shell {
+  flex: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 90px;
+  border-radius: 5px;
+  align-items: center;
+  
 }
 
 .footer {
@@ -90,7 +123,8 @@ a {
 }
 
 a,
-button {
+button,
+.cta {
   color: #f9faf8;
 }
 
@@ -104,13 +138,17 @@ button {
   font-weight: 900;
 }
 
-.hero-text {
-  font-size: 18px;
+.hero-text,
+.subtext {
   color: #e5e7eb;
 }
 
+.hero-text {
+  font-size: 18px;
+}
+
 button,
-.banner {
+.banner-shell {
   background-color: #3882f6;
 }
 
@@ -126,12 +164,52 @@ button {
 }
 
 .banner-button {
-  border: 2px solid white;
+  border: 2px solid #e5e7eb;
 }
 
 .content-top,
-.content-mid,
 .quote,
 .banner {
   padding: 48px 60px;
 }
+
+.content-mid {
+  padding: 24px 60px 48px 60px;
+}
+
+.box {
+  width: 125px;
+  height: 125px;
+  border: 2px solid #3882f6;
+  border-radius: 10px;
+} 
+
+.card-text {
+  text-align: center;
+  width: 125px;
+  font-size: 16px;
+  color: #6d6e6f;
+}
+
+.inspire {
+  font-size: 36px;
+  color: #1f2937;
+  font-style: italic;
+}
+
+.quote-credit {
+  text-align: right;
+  font-size: 24px;
+  font-weight: 700;
+  padding-right: 80px;
+}
+
+.cta {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.subtext {
+  font-size: 14px;
+}
+
